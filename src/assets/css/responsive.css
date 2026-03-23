@@ -1,0 +1,173 @@
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .logo img {
+        height: 30px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Ensure scrolled styles apply in responsive mode */
+    header.scrolled .logo img {
+        filter: brightness(0) invert(1);
+        /* Change logo to black */
+    }
+
+    header.scrolled .nav-links {
+        background-color: #4CAF50;
+    }
+
+    header.scrolled .nav-links a {
+        color: #ffffff;
+        /* Change text color */
+    }
+
+    header.scrolled .hamburger span {
+        color: #ffffff;
+        /* Change hamburger icon color */
+    }
+
+    /* Hero */
+    .hero {
+        /* height: 50vh; */
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* About Product */
+    .about-product {
+        padding: 1rem 0.5rem;
+    }
+
+    .about-product h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-product-content {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-text {
+        flex: 1;
+    }
+
+    .benefits-list {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 2px;
+    }
+
+    /* About Innovator */
+    .about-innovator {
+        padding: 1rem 0.5rem;
+    }
+
+    .about-innovator h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-innovator-content {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .innovator-image img {
+        margin-top: 1rem;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .innovator-text {
+        flex: 1;
+    }
+
+
+    /* Blog */
+    .blog h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .blog-post h3 {
+        font-size: 1rem;
+    }
+
+    .blog-post p {
+        font-size: 0.9rem;
+    }
+
+    /* Customer Reviews */
+    .reviews h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    /* Socials and Newsletter */
+    .social-links {
+        gap: 1rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .footer-content p {
+        display: flex;
+        flex-direction: column;
+    }
+}
