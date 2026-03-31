@@ -4,3 +4,12 @@ dist/
 build/
 .env
 .env.local
+.env.production
+.env*.local
+.next/
+README.md
+widget-test.html
+ToDo.md
+package-lock.json
+pnpm-lock.yaml
+pnpm-lock.yaml.*
