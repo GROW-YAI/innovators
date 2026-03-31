@@ -7,7 +7,6 @@ build/
 .env.production
 .env*.local
 .next/
-README.md
 widget-test.html
 ToDo.md
 package-lock.json
